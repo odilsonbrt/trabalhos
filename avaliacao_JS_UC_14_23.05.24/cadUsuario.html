@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Fila Atendimento Médico</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="nossaHistoria">Nossa Historia</a></li>
+                <li><a href="contato">Contato</a></li>
+                <li><a href="https://viverbem.unimedbh.com.br/doencas-respiratorias/">Dicas de Saúde</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+  <div class="container-fluid">
+    <div class="row">
+
+        <form>
+            <p>
+             <label for="inPaciente">Nome:</label>
+             <input type="text" id="inPaciente"  class="form-control" required autofocus><br>
+             <label for="endPaciente">Endereço:</label>
+             <input type="text" id="endPaciente" class="form-control"><br>
+             <label for="inCpf">Cpf:</label>
+             <input type="text" id="inCpf" class="form-control"><br><br>
+             
+
+             <select name="triagem" id="triagem">
+                <option value="Verde">Verde</option>
+                <option value="amarelo">Amarelo</option>
+                <option value="vermelho">Vermelho</option>
+             </select><br><br>
+
+             <select name="plano" id="plano">
+                <option value="particular">Particular</option>
+                <option value="planoFlex">Plano Flex</option>
+                <option value="planoMax">Plano Max</option>
+                <option value="planoDiamante">Plano Diamante</option>
+                <option value="planoGold">Plano Gold</option>
+                <option value="planoEmpresarial">Plano Empresarial</option>
+             </select><br>
+            </p>
+
+            <p>
+                <input type="submit" value="Adicionar Paciente" class="btn btn-primary">
+                <input type="button" value="Atender Paciente" id="btAtender" class="btn btn-danger">
+            </p>
+
+            <h2>Pacientes para atender
+            <span id="pacientesPendentes"></span>    
+            </h2>
+
+            <p class="bg-danger">&nbsp;pacientes em atendimento</p>
+            <h3 id="atendendoPaciente"></h3>
+        </form>
+    </div>
+  </div>  
+            <script src="js/main.js"></script>
+
+        </main>
+
+        <footer>
+            <p class="sobre">&copy; 2024 - Clinica Médica ParaTodos - Todos os Direitos Reservados.</p>
+            <p id="contato" class="contato">Contato (31) 9 8980-3986</p>
+        </footer> 
+
+</body>
+</html>
